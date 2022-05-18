@@ -15,35 +15,32 @@ body{
 }
 
 .middle{
-    position: absolute;
+    position: relative;
     top: 50%;
     left:50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 10%);
 }
 
 .navigation{
-   position: absolute; 
-   bottom: 16px;
-   left: 50%;
-   transform: translateX(-50%);
+   margin-left: 50px;
    display: flex;
 }
 
 .bar{
-    width: 30px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     margin: 6px;
     cursor:pointer;
-    background-color: #ddd;
-    opacity: 7;
-    border-radius: 1 0px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 1px solid blue;
     transition: all .4s ease;
 
 }
 
 .bar:hover{
-    opacity: 0.8;
-    transform: scale(1.1);
+    background-color: white;
+    border: white;
 }
 
 input[name="r"]{
@@ -78,4 +75,23 @@ input[name="r"]{
 }
 #r4:checked ~ .s1 {
     margin-left: -75%;
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+    
+.text {
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+}
+    
+.textik {
+    width: 25%;
+    transition: all .6s ease;
 }
